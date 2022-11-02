@@ -1,0 +1,5 @@
+.dockerignore
+.gitignore
+__pycache__
+PythonFCM/__pycache__
+Dockerfile

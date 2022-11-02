@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  lam_service:
+    image: cachua9/store_manager:python3.6.15
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/code/store_manager
+    environment:
+      - root_path=
+      - host=0.0.0.0
+      - source_server_url=
+      - list_cam_in=cam11
+      - list_cam_out=cam12
+      - list_cam_checkout=cam13
+      - list_cam_before_behind=cam14,cam15
+      - allow_loop=True
